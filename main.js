@@ -54,6 +54,7 @@ app.get("/creat", async (req, res) => {
       city: "Example",
       profession: "ExampleJob",
     });
+    
     const savedUser = await newUser
       .save()
       .then(() => res.json(savedUser))
